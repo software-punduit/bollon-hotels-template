@@ -26,6 +26,9 @@ header {
 }
 
 .top-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   padding-left: 0;
   padding-right: 16px;
   height: 36px;
@@ -44,7 +47,6 @@ header {
 .logo3 {
   height: 36px;
   width: 36px;
-  float: left;
   padding: 8px;
 }
 
@@ -62,8 +64,9 @@ header {
 
 div.right-nav,
 div.left-nav {
-  width: 50%;
-  float: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 div.right-nav p {
@@ -81,17 +84,19 @@ div.right-nav p span {
 
 .nav-area {
   /* centralize the nav area inside bottom-section */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   margin: 0 auto;
   padding: 0;
   height: 100%;
   /* Make the nav area's width to fit the li contents */
-  width: fit-content;
+  /*width: fit-content;*/
   list-style-type: none;
   text-align: center;
 }
 
 .nav-area li {
-  float: left;
   margin: 0px 24px;
   height: 100%;
   color: white;
@@ -115,12 +120,12 @@ div.right-nav p span {
 }
 
 .nav-area li a.active::after {
-  content: '';
+  content: "";
   width: 8px;
   height: 8px;
   border-radius: 50%;
   background-color: var(--secondary-color);
-  display: block;
+  /*display: block;*/
   position: absolute;
   top: -4px;
   right: -12px;
