@@ -17,10 +17,6 @@ body {
   font-family: sans-serif;
 }
 
-.clearfix {
-  clear: both;
-}
-
 header {
   width: 100%;
 }
@@ -125,8 +121,116 @@ div.right-nav p span {
   height: 8px;
   border-radius: 50%;
   background-color: var(--secondary-color);
-  /*display: block;*/
+
   position: absolute;
   top: -4px;
   right: -12px;
+}
+
+.text-overlay {
+  background-image: url("../images/Hero Image.png");
+  height: 500px; /* You must set a specified height */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+.title {
+  text-align: center;
+  color: #ffff;
+  padding-top: 36px;
+  background-color: var(--primary-color-shade);
+}
+
+.title h2 {
+  font-size: 32px;
+}
+
+.tile p {
+  font-size: 18px;
+}
+.outline-button {
+  border: none;
+  outline: none;
+  color: var(--primary-color);
+  width: max-content;
+  padding: 8px;
+  margin-top: -5px;
+  font-size: 12px;
+  background-color: var(--secondary-color);
+}
+
+.room {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: var(--primary-color-shade);
+  padding: 16px;
+  margin: 0%;
+  outline: none;
+}
+
+.left-area {
+  align-items: center;
+  text-align: right;
+}
+
+.uniform {
+  color: var(--secondary-color);
+  padding-top: 36px;
+  font: size 24px;
+}
+
+.paragraph {
+  color: #fff;
+  font-size: 14px;
+}
+
+.environ {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: var(--primary-color-shade);
+  padding: 16px;
+  margin: 0%;
+  outline: none;
+}
+
+.right-nav-text {
+  justify-content: center;
+  align-items: flex-end;
+}
+contact-form {
+  width: 100%;
+  padding: 36px;
+}
+
+.form-title {
+  align-items: center;
+  background: var(--secondary-color);
+  color: var(--primary-color-shade);
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.form input {
+  margin: 20px;
+  padding: 20px;
+  border: none;
+  background: none;
+  outline: none;
+  border-bottom: 1px solid var(--primary-color-shade);
+}
+
+.solid-button {
+  border: none;
+  outline: none;
+  color: var(--primary-color-shade);
+  width: max-content;
+  padding: 8px;
+  margin-top: -5px;
+  font-size: 12px;
+  background-color: var(--primary-color);
 }
