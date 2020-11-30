@@ -229,29 +229,36 @@ div.right-nav p span {
 
 .environ button {
   display: flex;
+  flex-direction: column;
   justify-content: end;
 }
 
-contact-form {
+.contact-form {
   width: 100%;
-  padding: 36px;
+  padding: 72px 16px;
+  margin: 0%;
+  outline: none;
+  background: var(--secondary-color);
 }
 
-.form-title {
+.contact-form h3 {
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
-  background: var(--secondary-color);
+
   color: var(--primary-color-shade);
 }
 
 .form {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
   font-size: 14px;
 }
 
 .form input {
   margin: 20px;
-  padding: 20px;
+
   border: none;
   background: none;
   outline: none;
@@ -267,4 +274,41 @@ contact-form {
   margin-top: -5px;
   font-size: 12px;
   background-color: var(--primary-color);
+}
+
+.bottom-area {
+  width: 100%;
+
+  padding: 72px 16px;
+  margin: 0%;
+  outline: none;
+  color: white;
+}
+.top-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: var(--primary-color);
+}
+
+.top-nav img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.bottom-nav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--primary-color-shade);
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: black;
+  color: white;
+  margin-top: 0;
+  outline: 0;
+  padding: 8px 36px;
 }
