@@ -252,12 +252,6 @@ div.right-nav p span {
   align-items: flex-end;
 }
 
-.environ button {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-}
-
 section.membership {
   width: 100%;
   padding: 72px 16px;
