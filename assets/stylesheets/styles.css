@@ -141,9 +141,11 @@ div.right-nav p span {
   content: "";
   width: 100%;
   height: 100%;
-  background: linear-gradient(0deg,
-      var(--primary-color-shade),
-      rgba(38, 0, 51, 0.5));
+  background: linear-gradient(
+    0deg,
+    var(--primary-color-shade),
+    rgba(38, 0, 51, 0.5)
+  );
   position: absolute;
   top: 0;
   left: 0;
@@ -206,8 +208,6 @@ div.right-nav p span {
   border-color: var(--primary-color-shade);
 }
 
-
-
 .services {
   display: flex;
   flex-direction: row;
@@ -238,7 +238,6 @@ section.membership h2 {
 .services .image-content img {
   width: 80%;
 }
-
 
 section.membership {
   padding: 72px 16px;
@@ -290,40 +289,90 @@ section.membership h2 {
   padding: 72px 16px;
   margin: 0;
   outline: none;
-
   background: var(--primary-color-shade);
 }
 
-
-.top-nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #fff;
-  width: 100%;
-  background-color: var(--primary-color);
+.sm-text {
+  text-align: center;
+  padding: 72px 16px;
+  background-color: var(--primary-color-shade);
+  color: #ffff;
 }
 
-/*
-.top-nav img {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.sm-text h3 {
+  font-size: 2rem;
+}
+.sm-text p {
+  font-size: 1.5rem;
 }
 
-.bottom-nav {
+.sm-icons {
   display: flex;
-  justify-content: space-evenly;
   background-color: var(--primary-color-shade);
 }
 
-footer {
+.sm-icons img {
   display: flex;
+  justify-content: center;
+}
+
+.logo1,
+.logo2,
+.logo3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-area {
+  display: flex;
+  width: 100%;
+  background-color: var(--primary-color-shade);
+  color: #fff;
+  padding: 72px 16px;
+}
+
+.blogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-area img {
+  background-color: var(--primary-color-shade);
+}
+
+.location-text {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+}
+
+.location-text p {
+  display: flex;
+  justify-content: space-evenly;
+
+  margin: 0;
+  padding: 0;
+  font-size: 0.8rem;
+  /*background-color: var(--primary-color-shade);*/
+}
+
+.disclaimer {
+  display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   background-color: black;
   color: white;
   margin-top: 0;
   outline: 0;
   padding: 8px 36px;
+  font-size: 00.8rem;
+  border: 1px solid black;
 }
-*/
+
+.disclaimer start {
+  justify-content: flex-start;
+}
