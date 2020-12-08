@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning</title>
+    <style>
+      .box {
+        height: 150px;
+        width: 150px;
+        border: 5px solid;
+        font-size: 1.2rem;
+      }
+
+      .box-small {
+        height: 50px;
+        width: 50px;
+        border: 5px solid palevioletred;
+        background-color: palegreen;
+
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+
+      #box1 {
+        border-color: blue;
+        top: 50px;
+      }
+
+      #box2 {
+        border-color: red;
+        position: relative;
+        top: 100px;
+        left: 200px;
+      }
+
+      #box3 {
+        border-color: green;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+
+      #box4 {
+        border-color: yellow;
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+      }
+
+      #box5 {
+        border-color: purple;
+        position: sticky;
+        top: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>CSS Positioning</h1>
+
+    <!-- Default positioning for all elements - static -->
+    <div class="box" id="box1">
+      1. position: static;
+    </div>
+
+    <!-- A box that is relatively positioned with a smaller box that is absolutely positioned inside it -->
+    <div class="box" id="box2">
+      2. position: relative;
+
+      <div class="box-small"></div>
+    </div>
+
+    <!-- A box with position absolute -->
+    <div class="box" id="box3">
+      3. position: absolute;
+    </div>
+
+    <!-- A box with fixed positioning -->
+    <div class="box" id="box4">
+      4. position: fixed;
+    </div>
+
+    <!-- A box with fixed positioning -->
+    <div class="box" id="box5">
+      5. position: sticky;
+    </div>
+
+    <div>
+      Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in consectetur eu ut. Egestas diam
+      sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in
+      consectetur eu ut. Egestas diam sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero
+      nec vitae. In ac, in consectetur eu ut. Egestas diam sollicitudin vel semper.
+      Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in consectetur eu ut. Egestas diam
+      sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in
+      consectetur eu ut. Egestas diam sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero
+      nec vitae. In ac, in consectetur eu ut. Egestas diam sollicitudin vel semper.
+      Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in consectetur eu ut. Egestas diam
+      sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in
+      consectetur eu ut. Egestas diam sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero
+      nec vitae. In ac, in consectetur eu ut. Egestas diam sollicitudin vel semper.
+      Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in consectetur eu ut. Egestas diam
+      sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in
+      consectetur eu ut. Egestas diam sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero
+      nec vitae. In ac, in consectetur eu ut. Egestas diam sollicitudin vel semper.
+      Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in consectetur eu ut. Egestas diam
+      sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in
+      consectetur eu ut. Egestas diam sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero
+      nec vitae. In ac, in consectetur eu ut. Egestas diam sollicitudin vel semper.
+      Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in consectetur eu ut. Egestas diam
+      sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in
+      consectetur eu ut. Egestas diam sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero
+      nec vitae. In ac, in consectetur eu ut. Egestas diam sollicitudin vel semper.
+      Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in consectetur eu ut. Egestas diam
+      sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in
+      consectetur eu ut. Egestas diam sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero
+      nec vitae. In ac, in consectetur eu ut. Egestas diam sollicitudin vel semper.
+      Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in consectetur eu ut. Egestas diam
+      sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in
+      consectetur eu ut. Egestas diam sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero
+      nec vitae. In ac, in consectetur eu ut. Egestas diam sollicitudin vel semper.
+      Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in consectetur eu ut. Egestas diam
+      sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in
+      consectetur eu ut. Egestas diam sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero
+      nec vitae. In ac, in consectetur eu ut. Egestas diam sollicitudin vel semper.
+      Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in consectetur eu ut. Egestas diam
+      sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in
+      consectetur eu ut. Egestas diam sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero
+      nec vitae. In ac, in consectetur eu ut. Egestas diam sollicitudin vel semper.
+      Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in consectetur eu ut. Egestas diam
+      sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in
+      consectetur eu ut. Egestas diam sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero
+      nec vitae. In ac, in consectetur eu ut. Egestas diam sollicitudin vel semper.
+      Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in consectetur eu ut. Egestas diam
+      sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in
+      consectetur eu ut. Egestas diam sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero
+      nec vitae. In ac, in consectetur eu ut. Egestas diam sollicitudin vel semper.
+      Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in consectetur eu ut. Egestas diam
+      sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in
+      consectetur eu ut. Egestas diam sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero
+      nec vitae. In ac, in consectetur eu ut. Egestas diam sollicitudin vel semper.
+      Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in consectetur eu ut. Egestas diam
+      sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in
+      consectetur eu ut. Egestas diam sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero
+      nec vitae. In ac, in consectetur eu ut. Egestas diam sollicitudin vel semper.
+      Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in consectetur eu ut. Egestas diam
+      sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in
+      consectetur eu ut. Egestas diam sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero
+      nec vitae. In ac, in consectetur eu ut. Egestas diam sollicitudin vel semper.
+      Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in consectetur eu ut. Egestas diam
+      sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in
+      consectetur eu ut. Egestas diam sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero
+      nec vitae. In ac, in consectetur eu ut. Egestas diam sollicitudin vel semper.
+      Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in consectetur eu ut. Egestas diam
+      sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in
+      consectetur eu ut. Egestas diam sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero
+      nec vitae. In ac, in consectetur eu ut. Egestas diam sollicitudin vel semper.
+      Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in consectetur eu ut. Egestas diam
+      sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in
+      consectetur eu ut. Egestas diam sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero
+      nec vitae. In ac, in consectetur eu ut. Egestas diam sollicitudin vel semper.
+      Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in consectetur eu ut. Egestas diam
+      sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in
+      consectetur eu ut. Egestas diam sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero
+      nec vitae. In ac, in consectetur eu ut. Egestas diam sollicitudin vel semper.
+      Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in consectetur eu ut. Egestas diam
+      sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in
+      consectetur eu ut. Egestas diam sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero
+      nec vitae. In ac, in consectetur eu ut. Egestas diam sollicitudin vel semper.
+      Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in consectetur eu ut. Egestas diam
+      sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in
+      consectetur eu ut. Egestas diam sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero
+      nec vitae. In ac, in consectetur eu ut. Egestas diam sollicitudin vel semper.
+      Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in consectetur eu ut. Egestas diam
+      sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in
+      consectetur eu ut. Egestas diam sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero
+      nec vitae. In ac, in consectetur eu ut. Egestas diam sollicitudin vel semper.
+      Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in consectetur eu ut. Egestas diam
+      sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in
+      consectetur eu ut. Egestas diam sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero
+      nec vitae. In ac, in consectetur eu ut. Egestas diam sollicitudin vel semper.
+      Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in consectetur eu ut. Egestas diam
+      sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero nec vitae. In ac, in
+      consectetur eu ut. Egestas diam sollicitudin vel semper.Sed vestibulum pulvinar enim, non vehicula pharetra libero
+      nec vitae. In ac, in consectetur eu ut. Egestas diam sollicitudin vel semper.
+    </div>
+  </body>
+
+</html>
