@@ -293,19 +293,28 @@ section.membership h2 {
 .top-footer-content {
   display: flex;
   justify-content: center;
-
+  text-align: center;
   background-color: var(--primary-color-shade);
   color: #ffff;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 48px;
 }
 
 .top-footer-content h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
 }
+
 .top-footer-content p {
-  font-size: 1rem;
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 0;
 }
 
 .top-footer-content img {
+  border-radius: 3px;
   margin-right: 2%;
 }
 
@@ -326,14 +335,20 @@ section.membership h2 {
 }
 
 .main-column img {
-  background-color: rgba(0, 0, 0, 0.64);
+  background-color: none;
   color: #ffff;
 }
 
-.side-bar-one {
+.side-bar-one span {
   margin: 0;
   padding: 0;
-  margin-top: -40px;
+  text-decoration-color: var(--secondary-color);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  margin-top: -20px;
+}
+/*margin: 0;
+  padding: 0;
 }
 
 .side-bar-two {
@@ -345,11 +360,11 @@ section.membership h2 {
   margin: 0;
   padding: 0;
 }
+
 .side-bar-four {
   margin: 0;
   padding: 0;
-  margin-top: -40px;
-}
+}*/
 
 .copyright-content {
   display: flex;
@@ -372,13 +387,14 @@ section.membership h2 {
   color: #ffff;
 }
 
-.page-header title h1 {
-  font-size: 1.5rem;
+.page-header-title h1 {
+  font-size: 3rem;
+  font: bold;
   margin-top: -5px;
 }
 
-.page-header title p {
-  font-size: 0.85rem;
+.page-header-title p {
+  font-size: 1.5rem;
   margin: 0;
   padding: 0;
   line-height: 2px;
@@ -391,21 +407,75 @@ section.membership h2 {
   padding: 72px 16px;
   color: #fff;
 }
+
 .rates {
   display: flex;
   justify-content: space-between;
 }
 
 .left-text {
-  font-size: 00.85rem;
+  font-size: 0.85rem;
   color: #fff;
+}
+
+.right-text {
+  font-size: 0.85rem;
 }
 
 .rooms-content {
   display: flex;
-  /*max-width: fit-content;*/
   margin: 0;
   padding: 0;
-  margin-left: 20px;
   margin-bottom: 20px;
+}
+
+.image {
+  width: 400px;
+}
+.sig-room {
+  margin-right: 20px;
+}
+.ada-room {
+  margin-right: 20px;
+}
+
+.sig-room-suites {
+  margin-right: 20px;
+}
+
+.sig-room-terrace {
+  margin-right: 20px;
+}
+
+.money {
+  font-size: bold;
+  color: var(--secondary-color);
+}
+
+.page-header-nav {
+  display: flex;
+  justify-content: center;
+}
+
+section.has-slope-below {
+  padding-bottom: calc(5% + 75px);
+}
+
+section.has-slope-below ~ section {
+  position: relative;
+}
+
+section.has-slope-below ~ section * {
+  position: relative;
+  z-index: 1;
+}
+
+section.has-slope-below ~ section::before {
+  content: "";
+  position: absolute;
+  top: -75px;
+  width: 100%;
+  height: 100%;
+  background: url(../images/bg-section-custom.svg) no-repeat;
+  background-size: contain;
 }
