@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,21 +12,9 @@
     <header>
       <div class="top-section">
         <div class="left-nav">
-          <img
-            class="logo1"
-            src="./assets/images/Facebook-Icon.svg"
-            alt="facebooklogo"
-          />
-          <img
-            class="logo2"
-            src="./assets/images/Twitter-Logo.svg"
-            alt="twitterlogo"
-          />
-          <img
-            class="logo3"
-            src="./assets/images/Instagram-Logo.svg"
-            alt="instalogo"
-          />
+          <img class="logo1" src="./assets/images/Facebook-Icon.svg" alt="facebooklogo" />
+          <img class="logo2" src="./assets/images/Twitter-Logo.svg" alt="twitterlogo" />
+          <img class="logo3" src="./assets/images/Instagram-Logo.svg" alt="instalogo" />
         </div>
 
         <div class="right-nav">
@@ -50,8 +39,8 @@
       </div>
     </header>
 
-    <section class="page-header-contact">
-      <div class="contact-title">
+    <section class="page-header has-slope-below">
+      <div class="page-header-title">
         <h1>Contact Us</h1>
         <p>
           Doesn't matter if you want to say Hi or book a room, our 24 hour
@@ -60,7 +49,7 @@
       </div>
     </section>
 
-    <section class="contact-page-info">
+    <section class="contact-page-form">
       <div class="contact-message">
         <h1>
           We look forward to <br />
@@ -76,45 +65,104 @@
         </p>
         <p>Call to book a reservation <br /><span>0900BOLLON</span></p>
       </div>
-      
+
       <div class="contact-form">
-          <form class="form-action" action="#" method="POST">
-            <input type="text" name="usern" id="usern" placeholder="Name" />
+        <form class="form-action" action="#" method="POST">
+          <div class="form-control">
+            <input type="text" name="name" id="name" placeholder="Name" />
             <p>e.g John Ikpa</p>
+          </div>
 
-            <input
-              type="text"
-              name="email"
-              id="email"
-              placeholder="Email address"
-            />
+          <div class="form-control">
+            <input type="email" name="email" id="email" placeholder="Email address" />
             <p>e.g johnikpa@example.com</p>
+          </div>
 
-            <input
-              type="text"
-              name="message"
-              id="message"
-              placeholder="Message"
-            />
+          <div class="form-control">
+            <textarea rows="5" name="message" id="message" placeholder="Message"></textarea>
             <p>e.g feedback, complaints, etc</p>
+          </div>
 
-            <button class="button button-solid-primary" type="submit">
-              SUBMIT MESSAGE
-            </button>
-          </form>
-        </div>
-      
+          <button class="button button-solid-primary" type="submit">
+            SUBMIT MESSAGE
+          </button>
+        </form>
+      </div>
     </section>
 
-      <section class="bottom-page-text">
+    <section class="contact-page-map">
+      <div class="contact-title">
         <h3>Don't be a stranger</h3>
         <p>Check in at any of our locations around Africa</p>
       </div>
+      <div class="contact-map"></div>
     </section>
 
-      <section class="contact-map">
-        <img src="assets/images/Map.png" />
+    <section class="footer">
+      <div class="top-footer-content">
+        <h3>Connect with Bollon on social media</h3>
+      </div>
+      <div class="top-footer-content">
+        <p>
+          Keep up-to-date with the latest news and promos on Bollon by <br />
+          following us on our social media channels
+        </p>
+      </div>
+      </div>
+
+      <div class="top-footer-content">
+        <img class="logo1" src="./assets/images/Facebook-Icon.svg" alt="facebooklogo" />
+        <img class="logo2" src="./assets/images/Twitter-Logo.svg" alt="twitterlogo" />
+        <img class="logo3" src="./assets/images/Instagram-Logo.svg" alt="instalogo" />
+      </div>
+
+      <div class="column-layout">
+        <div>
+          <img class="Brand-Logo-Light" src="./assets/images/Brand-Logo-Light.svg" />
+        </div>
+        <div>
+          <!-- Locations -->
+          <div class="brand-info-section">
+            <h5>LOCATION</h5>
+            <div class="columns">
+              <p>
+                Nigeria<br />21 Crescent Henry,<br />Allen, 500271<br />
+                Abuja
+              </p>
+              <p>
+                Ghana<br />21 Preacher stuff,<br />27106<br />
+                Accra
+              </p>
+              <p>
+                Kenya<br />300 Spartans & Co Avenue,<br />271 000<br />
+                Nairobi
+              </p>
+            </div>
+          </div>
+          <!-- Reservations -->
+          <div class="brand-info-section">
+            <h5>RESERVATIONS</h5>
+            <div class="columns">
+              <p>09000 BOLLON<br />
+                reservations@bollonsuites.co
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright-content">
+        <div class="left-content">
+          <p>
+            &copy;2020 kubiat Morgan for Bollon Hotels & Suites. All Rights
+            Reserved.
+          </p>
+        </div>
+        <div class="right-content">
+          <p>TERMS & CONDITIONS &nbsp;&nbsp;PRIVACY POLICY</p>
+        </div>
       </div>
     </section>
   </body>
+
 </html>
