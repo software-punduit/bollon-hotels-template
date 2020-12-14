@@ -140,9 +140,11 @@ div.right-nav p span {
   content: "";
   width: 100%;
   height: 100%;
-  background: linear-gradient(0deg,
-      var(--primary-color-shade),
-      rgba(38, 0, 51, 0.5));
+  background: linear-gradient(
+    0deg,
+    var(--primary-color-shade),
+    rgba(38, 0, 51, 0.5)
+  );
   position: absolute;
   top: 0;
   left: 0;
@@ -339,25 +341,6 @@ section.membership h2 {
   margin-top: -20px;
 }
 
-/*margin: 0;
-  padding: 0;
-}
-
-.side-bar-two {
-  margin: 0;
-  padding: 0;
-}
-
-.side-bar-three {
-  margin: 0;
-  padding: 0;
-}
-
-.side-bar-four {
-  margin: 0;
-  padding: 0;
-}*/
-
 .copyright-content {
   display: flex;
   justify-content: space-between;
@@ -430,7 +413,6 @@ section.membership h2 {
   margin-bottom: 20px;
 }
 
-
 .room-image {
   width: 50%;
   margin-right: 20px;
@@ -454,16 +436,16 @@ section.has-slope-below {
   padding-bottom: calc(5% + 75px);
 }
 
-section.has-slope-below~section {
+section.has-slope-below ~ section {
   position: relative;
 }
 
-section.has-slope-below~section * {
+section.has-slope-below ~ section * {
   position: relative;
   z-index: 1;
 }
 
-section.has-slope-below~section::before {
+section.has-slope-below ~ section::before {
   content: "";
   position: absolute;
   top: -75px;
@@ -472,4 +454,202 @@ section.has-slope-below~section::before {
   background: url(../images/bg-section-custom.svg) no-repeat;
   background-size: contain;
   background-position-x: center;
+}
+.page-header-facilities {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  padding: 72px 16px;
+  background-color: var(--primary-color);
+  color: #ffff;
+}
+facilities-title h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.facilities-title p {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.facilities-container {
+  display: flex;
+  justify-content: center;
+  padding: 72px 16px;
+  text-align: center;
+
+  background-color: var(--primary-color-shade);
+}
+.facilities-form-area {
+  font-size: 1.5rem;
+  background-color: white;
+  width: 650px;
+  height: 50px;
+  border: 0;
+  margin: 0;
+  border-radius: 10px;
+}
+
+.facilities-form-area input {
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 16px;
+  border-radius: 5px;
+  background: white;
+  font-weight: 100;
+}
+.facilities-form-area input::placeholder {
+  color: var(--primary-color-shade);
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+.facilities-nav-items {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  padding: 72px 16px;
+  background-color: var(--primary-color-shade);
+  color: #ffff;
+  font-size: 1.5rem;
+}
+
+.nav-items li {
+  margin: 24px;
+}
+
+ul {
+  list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: var(--secondary-color); /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.page-header-contact {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  padding: 72px 16px;
+  background-color: var(--primary-color);
+  color: #ffff;
+}
+
+.contact-title h1 {
+  font-size: 3rem;
+  font: bold;
+  margin-top: -5px;
+}
+
+.contact-title p {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-page-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  padding: 72px 16px;
+  background-color: var(--primary-color-shade);
+  color: #ffff;
+}
+
+.contact-message {
+  margin: 0;
+  padding: 0;
+  padding: 72px 16px;
+  background-color: var(--primary-color-shade);
+  color: #ffff;
+}
+.contact-message h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.contact-message p {
+  font-size: 1.5rem;
+}
+
+.contact-message span {
+  color: var(--secondary-color);
+  margin: 0 auto;
+}
+.contact-form {
+  display: flex;
+  width: 500px;
+  height: 500px;
+  background: #fff;
+  margin: 0 auto;
+  border: 4px solid#ffff;
+  padding: 70px 30px;
+  border-radius: 10px;
+}
+
+.form-action {
+  width: 90%;
+}
+
+.form-action input {
+  padding: 8px 16px;
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  border-bottom: 5px solid var(--primary-color-shade);
+}
+
+.form-action input::placeholder {
+  color: var(--primary-color-shade);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.form-action p {
+  margin: 0;
+  margin-top: 8px;
+  padding: 0;
+  font-size: 0.8rem;
+  text-align: right;
+  color: rgba(38, 0, 51, 0.5);
+}
+
+.form-action button {
+  display: flex;
+  /*justify-content: center;
+  align-content: center;
+  text-align: center;*/
+  margin-top: 50px;
+}
+.bottom-page-text {
+  margin: 0;
+  padding: 0;
+  padding: 72px 16px;
+  background-color: var(--primary-color-shade);
+  color: #ffff;
+  text-align: center;
+}
+
+.bottom-page-text h3 {
+  font-size: 3rem;
+}
+
+.bottom-page-text p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.contact-map {
+  max-width: fit-content;
 }
